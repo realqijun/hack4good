@@ -1,5 +1,5 @@
 import TemporaryDrawer from "../components/TemporaryDrawer";
-import Topbar from "../components/Topbar";
+import Header from "../components/Header";
 import sizeConfigs from "../configs/sizeConfig";
 import React from "react";
 import {Box} from "@mui/material";

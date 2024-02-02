@@ -1,51 +1,32 @@
 import React, {useState} from 'react';
 import Card from '../components/Card';
 import {Box, Button, Fade, Toolbar, Typography} from "@mui/material";
-import Topbar from "../components/Topbar";
+import Header from "../components/Header";
 import sizeConfigs from "../configs/sizeConfig";
 import colorConfigs from "../configs/colorConfig";
 import Sidebar from "../components/Sidebar";
 import {Outlet} from "react-router-dom";
 import TemporaryDrawer from "../components/TemporaryDrawer";
-import MediaCard from "../components/MediaCard";
+import ActivityCard from "../components/ActivityCard";
 import '../App.css'
 
 function MainPage() {
     return (
         <>
             <div>
-                <Topbar />
+                <Header />
             </div>
             <div className="drawer">
                 <TemporaryDrawer/>
             </div>
             <div className="container">
                 <div className="item">
-                    <MediaCard/>
+                    <ActivityCard/>
                 </div>
-                <div className="item">
-                    <MediaCard/>
-                </div>
-                <div className="item">
-                    <MediaCard/>
-                </div>
-                <div className="item">
-                    <MediaCard/>
-                </div>
-                <div className="item">
-                    <MediaCard/>
-                </div>
-                <div className="item">
-                    <MediaCard/>
-                </div>
-                <div className="item">
-                    <MediaCard/>
-                </div>
-
             </div>
 
             {/*<Box sx={{ display: "flex" }}>*/}
-            {/*    <Topbar />*/}
+            {/*    <Header />*/}
             {/*    <Box*/}
             {/*        component="nav"*/}
             {/*        sx={{*/}

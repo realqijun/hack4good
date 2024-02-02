@@ -14,11 +14,11 @@ import MailIcon from '@mui/icons-material/Mail';
 import {useStepContext} from "@mui/material";
 import {Link} from "react-router-dom";
 import Card from "./Card";
-import Topbar from "./Topbar";
+import Header from "./Header";
 import LoginPage from "../Pages/LoginPage";
 import '../App.css';
 
-type Anchor = 'top' | 'left' | 'bottom' | 'right';
+type Anchor = 'left';
 
 export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
@@ -43,7 +43,7 @@ export default function TemporaryDrawer() {
             };
     const list = (anchor: Anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+            sx={{ width: 250 }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
@@ -82,7 +82,7 @@ export default function TemporaryDrawer() {
     return (
         <div>
             <div>
-                {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
+                {(['left'] as const).map((anchor) => (
                     <React.Fragment key={anchor}>
                         <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
                         <Drawer
