@@ -6,8 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import '../App.css'
-import '../images/windows.jpeg';
-import '../images/cat.jpeg'
+// import '../images/windows.jpeg';
+import catImage from '../images/cat.jpeg';
 
 interface Activity {
     id?: string | undefined,
@@ -31,7 +31,7 @@ export default function ActivityCard({ id, title, overview, body, image, manpowe
         }}>
             <CardMedia
                 sx={{ height: 140 }}
-                image={require("../images/cat.jpeg")}
+                image={catImage}
                 component="img"
                 title={title}
             />
