@@ -1,0 +1,33 @@
+Button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container{
+    max-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.item{
+    /*flex: 1;*/
+    margin: 5px;
+    padding: 5px;
+}
+.drawer {
+    padding-top: 80px;
+    max-height: 700px;
+}
+
+
+
+
+
+/*:vsplit*/
+/*gg=G*/
